@@ -1,0 +1,19 @@
+#metadata
+project_home        /project/panphylo
+project_id          data_analysis
+raw_data            /project/panphylo/raw_data
+mapping_file        /project/panphylo/mapping_file.txt
+
+#hardware
+cpus                72
+parallel            9
+threads             8
+
+#kraken2
+kraken_db          /biostack/database/kraken/minikraken_20171019_8GB
+
+#id
+id                 0.999
+
+#annotation
+vfdb               /biostack/database/vfdb
