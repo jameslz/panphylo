@@ -9,11 +9,23 @@ cpus                72
 parallel            9
 threads             8
 
+#taxonomy
+taxonomy           /biostack/database/taxonomy
+
+#bact mash
+mash               /biostack/database/mash
+
 #kraken2
 kraken_db          /biostack/database/kraken/minikraken_20171019_8GB
 
-#id
-id                 0.999
+#mash tree
+upgma_id           0.999
 
-#annotation
-vfdb               /biostack/database/vfdb
+#cgmlst
+cgmlst_para        -minid 70 -mincov 50 -evalue 1e-20 -word_size 20
+
+#orthofinder
+orthofinder_para   -M msa  -T fasttree
+
+#typing
+typing_para        -minid 80 -mincov 80 -evalue 1e-20
